@@ -260,7 +260,11 @@
 						<img src="./pages/images/spec01.png" style="max-width: 30%; height: auto;">
 						<img src="./pages/images/spec02.png" style="max-width: 30%; height: auto;">
 						<script src="https://gist.github.com/Hanbyori/ab66f0f98e18b2c1d53501fe97feef0f.js"></script></p><br>
-						<p>하이라이트를 표시할 때, <code>step</code> 함수를 사용하여 specularMask에서 비금속과 금속 부분을 나누어 처리합니다.<br>전통적인 Blinn-Phong 셰이딩 모델을 사용하며, 금속 부분은 표현을 위해 Matcap을 추가로 사용합니다.</p>
+						<p>하이라이트를 표시할 때, <code>step</code> 함수를 사용하여 specularMask에서 비금속과 금속 부분을 나누어 처리합니다.<br>전통적인 Blinn-Phong 셰이딩 모델을 사용하며, 금속 부분은 표현을 위해 Matcap을 추가로 사용합니다.</p><br>
+						<p>Specular를 계산할 때, Hair에 비치는 하이라이트를 따로 계산하는 경우가 많습니다.</p>
+						<img src="./pages/images/spec03.jpg" style="max-width: 30%; height: auto;">
+						<p>이때 Mask 맵을 사용하여 하이라이트가 단순히 비춰질 부분을 계산하는 것이 아니라, 하나의 형상으로 계산합니다. Blinn-Phong 기반으로 계산하기 때문에 라이트와 카메라 각도에 따라 더 나은 결과물을 얻을 수 있습니다.</p>
+						<img src="./pages/images/spec04.gif" style="max-width: 30%; height: auto;">
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-2-8">
